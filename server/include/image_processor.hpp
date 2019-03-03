@@ -1,6 +1,7 @@
 #pragma once
 
 #include "asio.hpp"
+#include "protocol.hpp"
 
 #include <mutex>
 #include <condition_variable>

@@ -1,6 +1,6 @@
 
-#include "easylogging++.h"
 #include "server.hpp"
+#include "easylogging++.h"
 #include "cxxopts.hpp"
 
 INITIALIZE_EASYLOGGINGPP

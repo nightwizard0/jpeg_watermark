@@ -4,6 +4,7 @@
 #include <list>
 
 #include "asio.hpp"
+
 #include "image_processor.hpp"
 #include "session.hpp"
 
@@ -32,7 +33,7 @@ private:
     asio::io_service m_io;
     asio::ip::tcp::acceptor m_acceptor;
     asio::ip::tcp::socket m_sock;
-    asio::deadline_timer m_timer;
+    asio::steady_timer m_timer;
 
     std::list<SessionPtr> m_sessions;
 

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "asio.hpp"
+
 #include <vector>
 
 #include "protocol.hpp"
@@ -43,7 +44,7 @@ private:
     void timer_restart();
 
     asio::ip::tcp::socket m_sock;
-    asio::deadline_timer m_timer;
+    asio::steady_timer m_timer;
 
     const uint m_io_timeout = 10; //таймаут на операции ввода/вывода в секундах
     

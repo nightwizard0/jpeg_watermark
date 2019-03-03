@@ -31,7 +31,7 @@ private:
     uint m_reconnect_time;
 
     asio::ip::tcp::socket m_sock;
-    asio::deadline_timer m_timer;
+    asio::steady_timer m_timer;
 
     uint m_id;
     Image m_buffer;

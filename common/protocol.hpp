@@ -3,6 +3,8 @@
 #include <cstdint>
 #include <cstddef>
 
+typedef unsigned int uint;
+
 #pragma pack(1)
 
 #define PROTO_VALID_SIGN (0x3fe0) // сигнатура для проверка - для нашего ли сервера отправлен пакет
